@@ -37,30 +37,14 @@ class Hippopotamus {
     }
 
     // Cycle de vie
-    cycleLife(){
-        let today = new Date().getTime();
-        let threeWeek = today + (86400000*21);
-        let oneHour = today + (3600000);
-        while(today != threeWeek){
-            if(today){
-
-            }
-            while(today != oneHour){
-                for (let i=0;i<2;i++){
-                    this.eat();
-                }
-                for (let i=0;i<3;i++){
-                    this.swim();
-                }
-            }
-        }
-    }
+    startCycle(){
+        
+    }    
 }
 
-let hippo1 = new Hippopotamus("Hippo", 1500, 150);
-let hippo2 = new Hippopotamus("Oppih", 1000, 90);
+module.exports = Hippopotamus;
 
-hippo1.fight(hippo2);
+
 
 /*pour date a date + 3 semaines
 			pour date a date + 15 heures
