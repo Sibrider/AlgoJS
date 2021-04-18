@@ -2,7 +2,7 @@
 
 ## a
 
-		
+	```	
 	classe Point
     debut
 	    constructeur(x, y)
@@ -32,12 +32,18 @@
 		fin
 		
     fin
+	```
 
 ## b
 
+    ```
     méthode toString()
-    		debut
-    			renvoie "x : " + str(this.x) + ", y : " + str(this.y)
-    		fin
+		debut
+			pour chaque propriété dans l'objet
+				Ajouter a string : nom de la propriété + la valeur
+			finpour
+			renvoie string
+		fin
+	```
 
 ## c

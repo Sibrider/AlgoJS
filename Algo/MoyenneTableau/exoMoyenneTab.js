@@ -9,28 +9,25 @@
 const scanf = require('scanf');
 
 // Initialise les variables
-let i = 1;
 let tab = [];
 let total = 0;
 
 // Ajoute les valeurs dans un tableau
-while(i != 6){
-    console.log(`saisir la valeur ${i}`);
-    let number = scanf('%f');
-    tab.push(number);
-    i++;
+for(let i=0; i<5; i++) {
+    console.log(`saisir la valeur ${i+1} :`);
+    tab.push(scanf('%d'));
 }
 
-// Détermine l'indice maiximum du tableau
+// Détermine l'indice de la valeur maiximal du tableau
 let valeurMax = Math.max(...tab);
 let indiceMax = tab.indexOf(valeurMax);
-console.log(`l'indice maximum du tableau est: ${indiceMax}`);
+console.log(`l'indice de la valeur maximal du tableau est ${indiceMax} qui pointe sur la valeur ${valeurMax}`);
 
-// Calcul le total des nombres du tableau
-for (let n = 0; n <= indiceMax; n++) {
+// additionne les entiers du tableau
+for (let n = 0; n <= 4; n++) {
     total = total+tab[n];
 }
 
-// Calcul la moyenne
+// Calcul et affiche la moyenne
 let moyenne = total/5;
 console.log(`la moyenne est de : ${moyenne}`);

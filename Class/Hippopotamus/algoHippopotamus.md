@@ -2,6 +2,7 @@
 
 ## a
     
+```
     classe Hippopotamus
     debut
 	    constructeur(poids, nom, tailleDefense)
@@ -14,13 +15,15 @@
 		// méthode permettant de nager et faire perdre 300g
 		méthode swim()
 		debut
-			Affecter à this.poids : this.poids-300
+			Affecter à this.poids : this.poids-0.3
+			Afficher "hippopotam a perdu 0,3 kg et pèse : poids" 
 		fin
 
 		// méthode donnant à manger et donne 1kg
 		méthode eat()
 		debut
-			Affecter à son.poids : this.poids+1000
+			Affecter à son.poids : this.poids+1
+			Afficher "hippopotam a pris 1 kg et pèse : poids"
 		fin
 
 		// faire combattre deux hippopotames
@@ -34,24 +37,33 @@
 				Afficher this.nom + " perd le combat"
 		fin
     fin
+```
 
 ## b
 
+```
     méthode toString()
-    		debut
-    			renvoie "nom : " + this.nom + ", poids : " + str(this.poids) + ", taille : " + str(this.tailleDefense)
-    		fin
+		debut
+			pour chaque propriété dans l'objet
+				Ajouter a string : nom de la propriété + la valeur
+			finpour
+			renvoie string
+		fin
+```
 
 
 ## c
 
+```
     Affecter a hippopotame1 nouveau Hippopotamus(500, "hippopotame1", 100)
     Affecter a hippopotame2 nouveau Hippopotamus(600, "hippopotame2", 90)
 
 	hippotame1.HippopotamusFight(hippopotame2)
+```
 
 ## d
 
+```
 	Affecter a hippopotame1 nouveau Hippopotamus (500, "hippopotame1", 100)
 
 	méthode cycleDeVie(Hippopotamus)
@@ -67,8 +79,7 @@
 			finpour
 			si date = 20h
 				Afficher hippopotame1
-			sinon
-				continue
 			finsi
 		finpour
 	fin
+```

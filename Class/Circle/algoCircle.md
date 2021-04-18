@@ -1,8 +1,9 @@
 # Exercice 3
 
 ## a
+	Affecter a Point : class point
 
-    classe Circle
+    classe Circle extension de Point
     debut
 	   	constructeur(point, radius)
 	   	debut
