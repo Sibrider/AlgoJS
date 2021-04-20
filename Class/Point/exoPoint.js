@@ -3,39 +3,39 @@
 *   date : 18/04/2021
 */
 
-class Point{
-    constructor (x,y){
+class Point {
+    constructor(x, y) {
         this.x = x;
         this.y = y;
     }
 
     // getter pour obtenir la valeur de x
-    getX(){
+    getX() {
         return this.x;
     }
 
     // setter pour définir la valeur de x
-    setX(x){
+    setX(x) {
         this.x = x;
     }
 
     // getter pour obtenir la valeur de y
-    getY(){
+    getY() {
         return this.y;
     }
 
     // setter pour définir la valeur de y
-    setY(y){
+    setY(y) {
         this.y = y;
     }
 
     // transforme objet en string
     toString() {
-        let str = '';
-        for (var p in this) {
-            str += p + ': ' + this[p] + '\n';
+        let string = '';
+        for (var property in this) {
+            string += property + ': ' + this[property] + '\n';
         }
-        return str;
+        return string;
     }
 }
 
